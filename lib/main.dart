@@ -5,8 +5,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import './onboarding/pages/pages.dart';
 
-import 'onboarding/mainScreen.dart';
-
 bool? seenOnboard;
 
 void main() async {
@@ -18,7 +16,7 @@ void main() async {
   SharedPreferences pref = await SharedPreferences.getInstance();
   seenOnboard = pref.getBool('seenOnboard') ?? false; //if null set to false
   runApp(MyApp());
-}  
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -28,18 +26,18 @@ class MyApp extends StatelessWidget {
       title: 'Menta: Your Self-Application',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        textTheme: TextTheme(button: GoogleFonts.poppins()),
+        textTheme: TextTheme(
+          button: GoogleFonts.montserrat(),
+        ),
       ),
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home: seenOnboard == true
-          ? SignUpPage()
-          : AnimatedSplashScreen(
-              splash: 'assets/icons/Menta Logo.png',
-              duration: 2000,
-              splashTransition: SplashTransition.scaleTransition,
-              backgroundColor: Colors.blue,
-              nextScreen: Welcome()),
+      home: AnimatedSplashScreen(
+          splash: 'assets/icons/Menta Logo.png',
+          duration: 1500,
+          splashTransition: SplashTransition.scaleTransition,
+          backgroundColor: Colors.blue,
+          nextScreen: seenOnboard == true ? SignUpPage() : Welcome()),
     );
   }
 }

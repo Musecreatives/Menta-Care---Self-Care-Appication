@@ -23,6 +23,6 @@ final kBodyText1 = TextStyle(
 final wBodyText2 = TextStyle(
   color: Colors.white,
   fontFamily: 'Montserrat',
-  fontSize: SizeConfig.blockSizeH! * 4,
+  fontSize: SizeConfig.blockSizeH! * 94,
   fontWeight: FontWeight.bold,
 );

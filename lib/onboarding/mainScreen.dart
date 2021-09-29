@@ -43,7 +43,8 @@ class _WelcomeState extends State<Welcome> {
   }
 
   @override
-  Void initState() {
+  void initState() {
+    // ignore: todo
     // TODO: implement initState
     super.initState();
     setSeenonboard();
@@ -150,7 +151,7 @@ class _WelcomeState extends State<Welcome> {
                                 );
                               },
                             ),
-                          ]),
+                    ]),
               ],
             ),
           ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../main.dart';
 
@@ -18,7 +17,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   }
 
   _navigatetohome() async {
-    await Future.delayed(Duration(milliseconds: 1000), () {});
+    await Future.delayed(Duration(milliseconds: 900), () {});
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => MyApp()));
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './size_config.dart';
+import 'pages.dart';
 
 const defualtPadding = 16.0;
 
@@ -34,3 +34,6 @@ final wBodyText2 = TextStyle(
   fontSize: SizeConfig.blockSizeH! * 94,
   fontWeight: FontWeight.bold,
 );
+
+const emailError = 'Enter a valid email adress';
+const requiredField = "This field is required";

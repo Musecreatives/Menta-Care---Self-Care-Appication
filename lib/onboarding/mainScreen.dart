@@ -1,5 +1,4 @@
 // ignore_for_file: file_names
-import 'dart:ffi';
 
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +7,7 @@ import 'package:menta/main.dart';
 import 'package:menta/onboarding/models/onboarding.dart';
 import 'package:menta/size_config.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import './pages/pages.dart';
+import '../pages.dart';
 import '../widgets/widgets.dart';
 
 class Welcome extends StatefulWidget {

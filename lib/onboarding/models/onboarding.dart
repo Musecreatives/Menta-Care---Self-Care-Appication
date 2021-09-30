@@ -1,4 +1,4 @@
-import 'package:menta/onboarding/pages/pages.dart';
+import 'package:menta/pages.dart';
 
 class Welcome {
   final String title;

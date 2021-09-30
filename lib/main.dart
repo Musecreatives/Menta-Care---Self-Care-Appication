@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:menta/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import './onboarding/pages/pages.dart';
+import 'pages.dart';
 
 bool? seenOnboard;
 
@@ -42,7 +43,9 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
-          splash: 'assets/icons/Menta Logo.png',
+          splash: SvgPicture.asset(
+            'assets/images/logo white Menta.svg',
+          ),
           duration: 1500,
           splashTransition: SplashTransition.scaleTransition,
           backgroundColor: Colors.blue,

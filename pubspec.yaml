@@ -37,6 +37,7 @@ dependencies:
   google_fonts: ^2.1.0
   flutter_svg: ^0.20.0-nullsafety.3
   shared_preferences: ^2.0.8
+  form_field_validator: 
 
 dev_dependencies:
   flutter_test:

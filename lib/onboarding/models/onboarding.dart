@@ -1,3 +1,5 @@
+import 'package:menta/onboarding/pages/pages.dart';
+
 class Welcome {
   final String title;
   final String image;
@@ -22,3 +24,5 @@ List<Welcome> welcomeContents = [
       title: "Engage\n yourself in self-care ",
       image: "assets/images/undraw_yoga_248n 1.png")
 ];
+
+List<SignUpPage> signUpContents = [SignUpPage()];

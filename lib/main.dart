@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:menta/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import './onboarding/pages/pages.dart';
@@ -27,8 +28,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: TextTheme(
-          button: GoogleFonts.montserrat(),
+          bodyText1: GoogleFonts.poppins(),
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+            style: TextButton.styleFrom(
+                backgroundColor: blueBackground,
+                padding: EdgeInsets.all(defualtPadding))),
+        inputDecorationTheme: InputDecorationTheme(
+            border: textFieldBorder,
+            enabledBorder: textFieldBorder,
+            focusedBorder: textFieldBorder),
       ),
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,

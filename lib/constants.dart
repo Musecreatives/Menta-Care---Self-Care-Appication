@@ -2,9 +2,17 @@ import 'package:flutter/material.dart';
 
 import './size_config.dart';
 
+const defualtPadding = 16.0;
+
+OutlineInputBorder textFieldBorder = OutlineInputBorder(
+    borderSide: BorderSide(
+  color: blueBackground.withOpacity(0.1),
+));
+
 const primaryColor = Colors.yellow;
 const greyColor = Color(0xFFFEDBD0);
 const blueBackground = Colors.blue;
+const textFieldBorder1 = Colors.blue;
 
 final kTitle = TextStyle(
   fontFamily: 'Poppins',

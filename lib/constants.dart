@@ -9,7 +9,7 @@ OutlineInputBorder textFieldBorder = OutlineInputBorder(
   color: blueBackground.withOpacity(0.1),
 ));
 
-const primaryColor = Colors.yellow;
+const primaryColor = Color(0xFFFF9900);
 const greyColor = Color(0xFFFEDBD0);
 const blueBackground = Colors.blue;
 const textFieldBorder1 = Colors.blue;

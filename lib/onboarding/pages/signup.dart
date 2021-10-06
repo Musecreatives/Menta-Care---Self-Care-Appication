@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'package:menta/pages.dart';
 
+import 'explore_menta.dart';
+
 class SignUpPage extends StatelessWidget {
   // const SignUpPage({Key? key}) : super(key: key);
 
@@ -42,7 +44,10 @@ class SignUpPage extends StatelessWidget {
                     Row(children: [
                       Text("Already have an account?"),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginPage())),
                         child: Text(
                           "Sign In!",
                           style: TextStyle(fontWeight: FontWeight.bold),
@@ -64,9 +69,14 @@ class SignUpPage extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {
                           if (_formKey.currentState!.validate()) {
-                            print("it works");
+                            // print("it works");
+                            _formKey.currentState!.save();
                           }
                         },
+                        onLongPress: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ExploreMenta())),
                         child: Text("Sign Up"),
                       ),
                     ),
@@ -78,5 +88,10 @@ class SignUpPage extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  push(BuildContext context) {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => ExploreMenta()));
   }
 }

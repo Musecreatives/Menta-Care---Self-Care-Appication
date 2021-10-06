@@ -1,4 +1,4 @@
-export 'onboarding/mainScreen.dart';
+export 'onboarding/startScreen.dart';
 
 export 'onboarding/pages/login.dart';
 
@@ -17,3 +17,4 @@ export 'package:flutter/painting.dart';
 export 'package:flutter/rendering.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 
+export 'package:menta/onboarding/pages/components/sign_in_textForm.dart';

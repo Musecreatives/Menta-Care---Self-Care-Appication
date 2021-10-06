@@ -34,7 +34,8 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
             style: TextButton.styleFrom(
                 backgroundColor: blueBackground,
-                padding: EdgeInsets.all(defualtPadding))),
+                padding: EdgeInsets.all(defualtPadding)
+                )),
         inputDecorationTheme: InputDecorationTheme(
             border: textFieldBorder,
             enabledBorder: textFieldBorder,

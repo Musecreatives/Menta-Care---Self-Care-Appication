@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'pages.dart';
 
@@ -23,7 +24,7 @@ final kTitle = TextStyle(
 
 final kBodyText1 = TextStyle(
   color: Colors.black,
-  fontFamily: 'Montserrat',
+  fontFamily: 'Montserrat, sans-serif',
   fontSize: SizeConfig.blockSizeH! * 4,
   fontWeight: FontWeight.bold,
 );

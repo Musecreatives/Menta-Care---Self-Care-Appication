@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:menta/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'pages.dart';
@@ -21,6 +19,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -28,14 +28,11 @@ class MyApp extends StatelessWidget {
       title: 'Menta: Your Self-Application',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        textTheme: TextTheme(
-          bodyText1: GoogleFonts.poppins(),
-        ),
+        fontFamily: 'Montserrat',
         elevatedButtonTheme: ElevatedButtonThemeData(
             style: TextButton.styleFrom(
                 backgroundColor: blueBackground,
-                padding: EdgeInsets.all(defualtPadding)
-                )),
+                padding: EdgeInsets.all(defualtPadding))),
         inputDecorationTheme: InputDecorationTheme(
             border: textFieldBorder,
             enabledBorder: textFieldBorder,

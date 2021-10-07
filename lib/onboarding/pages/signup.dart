@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:menta/pages.dart';
 
+import 'HomeScreen.dart';
 import 'explore_menta.dart';
 
 class SignUpPage extends StatelessWidget {
@@ -76,7 +77,7 @@ class SignUpPage extends StatelessWidget {
                         onLongPress: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ExploreMenta())),
+                                builder: (context) => HomeScreen())),
                         child: Text("Sign Up"),
                       ),
                     ),

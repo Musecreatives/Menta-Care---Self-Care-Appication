@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:menta/pages.dart';
 
+import 'HomeScreen.dart';
+import 'explore_menta.dart';
+
 class LoginPage extends StatelessWidget {
   // const LoginPage({Key? key}) : super(key: key);
 
@@ -69,6 +72,11 @@ class LoginPage extends StatelessWidget {
                           if (_formKey.currentState!.validate()) {
                             // print("it works");
                             _formKey.currentState!.save();
+                          } else {
+                            () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomeScreen()));
                           }
                         },
                         child: Text("Sign In"),

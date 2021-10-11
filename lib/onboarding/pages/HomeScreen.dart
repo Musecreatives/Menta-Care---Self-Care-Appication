@@ -66,7 +66,7 @@ class HomeScreen extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Search",
-                        icon: SvgPicture.asset("menta/assets/icons/Vector.svg"),
+                        // icon: Image.asset('menta/assets/icons/Activity.png'),
                         border: InputBorder.none,
                       ),
                     )),
@@ -84,8 +84,8 @@ class HomeScreen extends StatelessWidget {
                         ),
                         child: Column(
                           children: <Widget>[
-                            SvgPicture.asset(
-                                "menta/assets/images/undraw_Meditating_re_aiqa.svg",
+                            Image.asset(
+                                "assets/images/undraw_Meditation_re_gll0 1.png",
                                 height: 5,
                                 width: 6),
                             Text('data'),

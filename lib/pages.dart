@@ -12,8 +12,7 @@ export 'package:menta/onboarding/models/validator.dart';
 
 export 'constants.dart';
 
-export 'package:flutter/cupertino.dart';
-export 'package:flutter/painting.dart';
+
 export 'package:flutter/rendering.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 

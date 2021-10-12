@@ -66,33 +66,42 @@ class HomeScreen extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Search",
-                        // icon: Image.asset('menta/assets/icons/Activity.png'),
+                        icon: Icon(Icons.search),
                         border: InputBorder.none,
                       ),
                     )),
               ),
+              SizedBox(
+                height: defualtPadding * 0.9,
+              ),
               Expanded(
                 child: GridView.count(
                   crossAxisCount: 2,
+                  childAspectRatio: .85,
+                  crossAxisSpacing: 1.0,
+                  mainAxisSpacing: 20,
+                  // ignore: prefer_const_literals_to_create_immutables
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(13),
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Image.asset(
-                                "assets/images/undraw_Meditation_re_gll0 1.png",
-                                height: 5,
-                                width: 6),
-                            Text('data'),
-                          ],
-                        ),
-                      ),
-                    )
+                    CategoryCard(
+                      title: " Meditation ",
+                      imgSrc: "assets/images/undraw_Meditation_re_gll0 1.png",
+                      press: () {},
+                    ),
+                    CategoryCard(
+                      imgSrc: "assets/images/undraw_workout_gcgu 1.png",
+                      title: "Exercise",
+                      press: () {},
+                    ),
+                    CategoryCard(
+                      imgSrc: "assets/images/macaroni-message-sent.png",
+                      title: "Treat Yourself To 5 Gentle Breaths",
+                      press: () {},
+                    ),
+                    CategoryCard(
+                      imgSrc: "assets/images/undraw_Meditation_re_gll0 1.png",
+                      title: "A quick lesson in salsa Dancing",
+                      press: () {},
+                    ),
                   ],
                 ),
               )

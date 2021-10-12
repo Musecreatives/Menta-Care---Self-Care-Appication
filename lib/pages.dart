@@ -12,8 +12,12 @@ export 'package:menta/onboarding/models/validator.dart';
 
 export 'constants.dart';
 
-
+export 'package:cupertino_icons/cupertino_icons.dart';
 export 'package:flutter/rendering.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 
 export 'package:menta/onboarding/pages/components/sign_in_textForm.dart';
+
+export 'package:menta/widgets/category_Card.dart';
+
+export 'package:menta/onboarding/pages/HomeScreen.dart';

@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:menta/onboarding/pages/meditation.dart';
 
 import 'package:menta/pages.dart';
+
+import 'bottom_navbar_items.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
@@ -19,55 +22,36 @@ class BottomNavBar extends StatelessWidget {
           children: <Widget>[
             BottomNavItem(
               imgScr: "assets/icons/fluent_home-16-filled.svg",
-              title: "Activity",
-              press: () {},
+              title: "Home",
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return HomeScreen();
+                  }),
+                );
+              },
             ),
             BottomNavItem(
-              imgScr: "assets/icons/fluent_home-16-filled.svg",
-              title: "Explore",
-              press: () {},
-              isActive: true,
-            ),
-            BottomNavItem(
-              imgScr: "assets/icons/fluent_home-16-filled.svg",
+              imgScr: "assets/icons/bi_cloud-moon-fill.svg",
+              // width: 2,
+              // height: 2,
               title: "Meditate",
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return Meditation();
+                  }),
+                );
+              },
+            ),
+            BottomNavItem(
+              imgScr: "assets/icons/meditation_icon.svg",
+              title: "Happy Mind",
               press: () {},
             ),
           ]),
-    );
-  }
-}
-
-class BottomNavItem extends StatelessWidget {
-  final String imgScr;
-  final String title;
-  final VoidCallback press;
-  final bool isActive;
-  const BottomNavItem({
-    Key? key,
-    required this.imgScr,
-    required this.title,
-    required this.press,
-    this.isActive = false,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: press,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          SvgPicture.asset(
-            imgScr,
-            color: isActive ? textFieldBorder1 : neutralColor,
-          ),
-          Text(
-            title,
-            style: TextStyle(color: isActive ? textFieldBorder1 : neutralColor),
-          )
-        ],
-      ),
     );
   }
 }

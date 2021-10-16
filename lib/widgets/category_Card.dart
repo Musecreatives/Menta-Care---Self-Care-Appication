@@ -6,7 +6,7 @@ import 'package:menta/pages.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class CategoryCard extends StatelessWidget {
-  final String imgSrc;
+  final String  imgSrc;
   final String title;
   final VoidCallback press;
   const CategoryCard({

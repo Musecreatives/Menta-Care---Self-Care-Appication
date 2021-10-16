@@ -1,8 +1,11 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:menta/onboarding/pages/meditation.dart';
 
 import 'package:menta/pages.dart';
+import 'package:menta/widgets/bottom_nav_bar.dart';
+import 'package:menta/widgets/search_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,6 +16,7 @@ class HomeScreen extends StatelessWidget {
     double sizeH = SizeConfig.blockSizeH!;
     double sizeV = SizeConfig.blockSizeV!;
     return Scaffold(
+      bottomNavigationBar: BottomNavBar(),
       body: Stack(
         children: <Widget>[
           Container(
@@ -58,18 +62,8 @@ class HomeScreen extends StatelessWidget {
               ),
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
-                child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(21.5)),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Search",
-                        icon: Icon(Icons.search),
-                        border: InputBorder.none,
-                      ),
-                    )),
+                    const EdgeInsets.symmetric(horizontal: 26, vertical: 5),
+                child: SearchBar(),
               ),
               SizedBox(
                 height: defualtPadding * 0.9,
@@ -85,7 +79,14 @@ class HomeScreen extends StatelessWidget {
                     CategoryCard(
                       title: " Meditation ",
                       imgSrc: "assets/images/undraw_Meditation_re_gll0 1.png",
-                      press: () {},
+                      press: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) {
+                            return Meditation();
+                          }),
+                        );
+                      },
                     ),
                     CategoryCard(
                       imgSrc: "assets/images/undraw_workout_gcgu 1.png",
@@ -112,3 +113,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+

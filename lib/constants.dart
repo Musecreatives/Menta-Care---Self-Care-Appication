@@ -13,6 +13,7 @@ const primaryColor = Color(0xFFFF9900);
 const greyColor = Color(0xFFFEDBD0);
 const blueBackground = Colors.blue;
 const textFieldBorder1 = Colors.blue;
+const neutralColor = Colors.blueGrey;
 
 final kTitle = TextStyle(
   fontFamily: 'Poppins',

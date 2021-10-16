@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
           splash: SvgPicture.asset(
             'assets/images/logo white Menta.svg',
           ),
-          duration: 1500,
+          duration: 1400,
           splashTransition: SplashTransition.scaleTransition,
           backgroundColor: Colors.blue,
           nextScreen: seenOnboard == true ? SignUpPage() : Welcome()),

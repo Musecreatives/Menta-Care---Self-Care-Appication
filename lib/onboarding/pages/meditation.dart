@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 import 'package:menta/pages.dart';
@@ -103,6 +104,32 @@ class Meditation extends StatelessWidget {
                         sizeH: 3,
                         press: () {},
                       ),
+                    ],
+                  ),
+                ),
+                Text(
+                  "Meditation",
+                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        fontWeight: FontWeight.w900,
+                      ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 15),
+                  height: 90,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(13),
+                    boxShadow: [
+                      BoxShadow(
+                          offset: Offset(0, 17),
+                          blurRadius: 23,
+                          spreadRadius: -13,
+                          color: greyColor),
+                    ],
+                  ),
+                  child: Row(
+                    children: <Widget>[
+                      SvgPicture.asset("assetName")
                     ],
                   ),
                 )

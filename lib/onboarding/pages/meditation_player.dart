@@ -23,6 +23,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
     double sizeH = SizeConfig.blockSizeH!;
     double sizeV = SizeConfig.blockSizeV!;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: Scaffold(
         body: Center(

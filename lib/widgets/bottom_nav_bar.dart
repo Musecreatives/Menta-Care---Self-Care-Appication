@@ -47,8 +47,8 @@ class BottomNavBar extends StatelessWidget {
               },
             ),
             BottomNavItem(
-              imgScr: "assets/icons/meditation_icon.svg",
-              title: "Happy Mind",
+              imgScr: "assets/icons/bx_bx-user.svg",
+              title: "Paul",
               press: () {},
             ),
           ]),

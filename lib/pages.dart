@@ -20,7 +20,7 @@ export 'package:menta/onboarding/pages/components/sign_in_textForm.dart';
 
 export 'package:menta/widgets/category_Card.dart';
 
-export 'package:menta/onboarding/pages/HomeScreen.dart';
+export 'package:menta/onboarding/pages/home_screen.dart';
 
 export 'package:menta/widgets/search_bar.dart';
 

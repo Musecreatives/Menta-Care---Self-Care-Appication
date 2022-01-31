@@ -6,7 +6,7 @@ import 'package:menta/pages.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class CategoryCard extends StatelessWidget {
-  final String  imgSrc;
+  final String imgSrc;
   final String title;
   final VoidCallback press;
   const CategoryCard({
@@ -27,7 +27,7 @@ class CategoryCard extends StatelessWidget {
           child: Container(
             // padding: EdgeInsets.all(20),
             decoration: BoxDecoration(
-                color: HexColor("#F3FCF0"),
+                color: HexColor("#FFFFFF"),
                 borderRadius: BorderRadius.circular(13),
                 // ignore: prefer_const_literals_to_create_immutables
                 boxShadow: [

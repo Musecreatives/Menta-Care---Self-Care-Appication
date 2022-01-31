@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:menta/pages.dart';
 
-import 'HomeScreen.dart';
+import 'home_screen.dart';
 import 'explore_menta.dart';
 
 class SignUpPage extends StatelessWidget {
